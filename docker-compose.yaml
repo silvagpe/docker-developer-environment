@@ -1,0 +1,8 @@
+services:
+  app:
+    image: mcr.microsoft.com/dotnet/sdk:8.0    
+    working_dir: /my_work_dir
+    volumes:
+      - ./:/my_work_dir
+    stdin_open: true  # keep stdin open
+    tty: true         # active TTY mode
